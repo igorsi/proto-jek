@@ -1,0 +1,63 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home" class="row">
+  <h1>Blog Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="row">
+ 
+    <div class="large-3 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+      </div>
+    </div>
+    <div class="large-3  columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a three columns grid panel with an arbitrary height.</p>
+      </div>
+    </div>
+ 
+  </div>
+ 
+ 
+ 
+  <div class="row">
+ 
+    <div class="large-6 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+      </div>
+    </div>
+    <div class="large-2 columns">
+      <div class="panel">
+        <p>
+          <img src="http://placehold.it/200x200" />
+        </p>
+      </div>
+    </div>
+    <div class="large-4 columns">
+      <div class="panel">
+        <h5>Panel Title</h5>
+        <p>This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.</p>
+      </div>
+    </div>
+ 
+  </div>

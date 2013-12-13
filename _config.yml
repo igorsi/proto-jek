@@ -1,0 +1,5 @@
+name: Scypho
+markdown: redcarpet
+pygments: true
+
+baseurl: /

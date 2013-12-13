@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@function asset($file) {
+	@return '<%= site.baseurl %>' + asset_path($file);
+}
+
+/**
+ * Import Extras
+ */
+// @import "colors";
+// @import "fonts";
+// @import "icomoon";
+
+/**
+ * Import Normalize
+ */
+@import "foundation/foundation";
+
+/**
+ * Import Foundation
+ */
+@import "foundation/normalize";
+
+/**
+ * Import plugins
+ */
+// @import "_plugins/mixins";
+// @import "_plugins/mobile-menu";
+// @import "_plugins/mini.collapse";
+// @import "_plugins/nivo-lightbox";
+
+$base_url: '<%= site.baseurl %>';
+
+/**
+ * Import custom css
+ */
+@import "_custom/main";
