@@ -1,0 +1,201 @@
+// //
+// // Typography Variables
+// //
+$font-size-huge: emCalc(100px);
+$font-size-tagline: emCalc(60px);
+$font-size-biggest: emCalc(50px); // H1
+$font-size-bigger: emCalc(36px); // H2
+$font-size-big: emCalc(26px); // H3
+$font-size-normal: emCalc(20px); // H4 + Body
+$font-size-medium: emCalc(18px); // H5 + Menu
+$font-size-compact: emCalc(16px); // H6 + Special
+$font-size-small: emCalc(12px); // Footer copyleft notice
+$font-size: $font-size-normal;
+
+// Heading font styles
+
+$header-font-weight: normal;
+
+// Heading font sizes
+
+$h1-font-size: $font-size-biggest;
+$h2-font-size: $font-size-bigger;
+$h3-font-size: $font-size-big;
+
+// Font colors
+
+$header-font-color:                    $grayDark !default;
+
+$anchor-font-color:                    $blueScreen !default;
+$anchor-font-color-hover:              $blueSolution !default;
+
+
+$topbar-height:                        60px;
+
+$topbar-menu-link-color:               $blueScreen;
+$topbar-menu-icon-color:               $blueScreen;
+$topbar-menu-link-color-toggled:       $grayDark;
+$topbar-menu-icon-color-toggled:       $grayDark;
+
+
+// Meta Serif Web Smallcaps Bold
+$font-family-serif-sc-bold: "MetaSerifScWeb-Bold", Georgia, serif;
+@font-face {
+  font-family: MetaSerifScWeb-Bold;
+  src: url("../fonts/MetaSerifScWeb-Bold.eot");
+  src: url('../fonts/MetaSerifScWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifScWeb-Bold.woff') format('woff');
+}
+@mixin serif-sc-bold {
+  font: {
+    family: $font-family-serif-sc-bold;
+    weight: normal;
+  }
+}
+.serif-sc-bold {
+  @include serif-sc-bold;
+}
+
+
+// Meta Serif Web Smallcaps Book
+$font-family-serif-sc: "MetaSerifScWeb-Book", Georgia, serif;
+@font-face {
+  font-family: MetaSerifScWeb-Book;
+  src: url("../fonts/MetaSerifScWeb-Book.eot");
+  src: url('../fonts/MetaSerifScWeb-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifScWeb-Book.woff') format('woff');
+}
+@mixin serif-sc {
+  font-family: $font-family-serif-sc;
+  font-weight: normal;
+}
+.serif-sc {
+  @include serif-sc;
+}
+
+
+// Meta Serif Web Smallcaps Book Italic
+$font-family-serif-sc-italic: "MetaSerifScWeb-Italic", Georgia, serif;
+@font-face {
+  font-family: MetaSerifScWeb-BookItalic;
+  src: url("../fonts/MetaSerifScWeb-BookItalic.eot");
+  src: url('../fonts/MetaSerifScWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifScWeb-BookItalic.woff') format('woff');
+}
+@mixin serif-sc-italic {
+  font-family: $font-family-serif-sc-italic;
+  font-weight: normal;
+}
+.serif-sc-italic {
+  @include serif-sc-italic;
+}
+
+
+// Meta Serif Web Bold
+$font-family-serif-bold: "MetaSerifWeb-Bold", Georgia, serif;
+@font-face {
+  font-family: MetaSerifWeb-Bold;
+  src: url("../fonts/MetaSerifWeb-Bold.eot");
+  src: url('../fonts/MetaSerifWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifWeb-Bold.woff') format('woff');
+}
+@mixin serif-bold {
+  font: {
+    family: $font-family-serif-bold;
+    weight: normal;
+  }
+}
+.serif-bold {
+  @include serif-bold;
+}
+
+
+// Meta Serif Web Book Italic
+$font-family-serif-italic: "MetaSerifWeb-BookItalic", Georgia, serif;
+@font-face {
+  font-family: MetaSerifWeb-BookItalic;
+  src: url("../fonts/MetaSerifWeb-BookItalic.eot");
+  src: url('../fonts/MetaSerifWeb-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifWeb-BookItalic.woff') format('woff');
+}
+@mixin serif-italic {
+  font-family: $font-family-serif-italic;
+  font-weight: normal;
+}
+.serif-italic {
+  @include serif-italic;
+}
+
+
+// Meta Serif Web Book
+$font-family-serif: "MetaSerifWeb-Book", Georgia, serif;
+@font-face {
+  font-family: MetaSerifWeb-Book;
+  src: url("../fonts/MetaSerifWeb-Book.eot");
+  src: url('../fonts/MetaSerifWeb-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MetaSerifWeb-Book.woff') format('woff');
+}
+@mixin serif {
+  font-family: $font-family-serif;
+  font-weight: normal;
+}
+.serif {
+  @include serif;
+}
+
+
+// DIN Web Pro Light
+$font-family-sans-light: "DINWebPro-Light", Trebuchet, serif;
+@font-face {
+  font-family: DINWebPro-Light;
+  src: url("../fonts/DINWebPro-Light.eot");
+  src: url('../fonts/DINWebPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DINWebPro-Light.woff') format('woff');
+}
+@mixin sans-light {
+  font-family: $font-family-sans-light;
+  font-weight: normal;
+}
+.sans-light {
+  @include sans-light;
+}
+
+
+// DIN Web Pro Medium
+$font-family-sans-medium: "DINWebPro-Medium", Trebuchet, serif;
+@font-face {
+  font-family: DINWebPro-Medium;
+  src: url("../fonts/DINWebPro-Medium.eot");
+  src: url('../fonts/DINWebPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DINWebPro-Medium.woff') format('woff');
+}
+@mixin sans-medium {
+  font-family: $font-family-sans-medium;
+  font-weight: normal;
+}
+.sans-medium {
+  font-family: $font-family-sans-medium;
+}
+
+
+// DIN Web Pro Regular
+$font-family-sans: "DINWebPro", Trebuchet, serif;
+@font-face {
+  font-family: DINWebPro;
+  src: url("../fonts/DINWebPro.eot");
+  src: url('../fonts/DINWebPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DINWebPro.woff') format('woff');
+}
+@mixin sans {
+  font-family: $font-family-sans;
+  font-weight: normal;
+}
+.sans {
+  font-family: $font-family-sans;
+}
+
+// // Various global styles
+$default-float: left;
+$body-font-color: $gray;
+$body-font-family: $font-family-serif;
+$header-font-family: $font-family-sans;

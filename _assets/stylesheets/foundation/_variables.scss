@@ -1,0 +1,80 @@
+@import "foundation/functions";
+
+//
+// Foundation Variables
+//
+$magenta: #c61c59;
+$magenta-hover: #9c044e;
+$maroon: #630024;
+$pink: #e4a8b8;
+
+$orangeScreen: #ffb400;
+$orangeLightScreen: #ff9c00;
+
+$grayDark: #333333;
+$gray: #636363;
+$grayMediumLight: #868686;
+$grayLight: #aaaaaa;
+$grayFooter: #bfbfbf;
+$grayBg: #ececec;
+$grayLightBg: #f5f5f5;
+$graySticky: #c3c3c3;
+$grayTagline: #505050;
+
+$blueScreen: #34a2d0;
+$blueScreenRGBA: rgba(red($blueScreen), green($blueScreen), blue($blueScreen), 1);
+$blueInnovation: #108bbe;
+$blueInnovationRGBA: rgba(red($blueInnovation), green($blueInnovation), blue($blueInnovation), 1);
+$blueSolution: #0e79a6;
+$blueSolutionRGBA: rgba(red($blueSolution), green($blueSolution), blue($blueSolution), 1);
+$blueTransport: #000080;
+
+$green: #6aa13e;
+
+$white-selection: rgba(255,255,255,0.99);
+
+
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with browser-based text zoom or user-set defaults.
+$base-font-size: 100% !default;
+$mini-screen: 480px;
+$small-screen: 768px;
+$compact-screen: 1024px;
+$medium-screen: 1280px;
+//$large-screen: 1440px;
+
+// This is the default html and body font-size for the base em value.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base: 16px !default;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// $padding-base: 2.5em;
+
+// // Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+// @function emCalc($pxWidth) {
+//   @return $pxWidth / $em-base * 1em;
+// }
+
+// // Change whether or not you include browser prefixes
+// $experimental: true !default;
+
+
+$padding-base: emCalc(20px);
+$column-gutter: emCalc(45px);
+
+$row-width: emCalc(1200px);
+
+
+// Custom media queries
+$mini: "only screen and (min-width: #{$mini-screen})";
+$compact: "only screen and (min-width:#{$compact-screen})" !default;
+$media-mini-down: "only screen and (max-width: #{$mini-screen})";
+$media-small-down: "only screen and (max-width: #{$small-screen})";
+$media-compact-down: "only screen and (max-width: #{$compact-screen})";
+$media-medium-down: "only screen and (max-width: #{$medium-screen})";

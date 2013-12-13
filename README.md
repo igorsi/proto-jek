@@ -1,4 +1,2 @@
-proto-jek
-=========
-
-Prototyping with Jekyll + Foundation 5
+si_scy
+======

@@ -1,0 +1,22 @@
+.margin-top{
+  margin-top: $padding-base !important;
+}
+.inner-wrap {
+  height: 550px;
+}
+
+.inner-wrap{
+	nav{
+		&.top-bar,
+		&.tab-bar {
+		  background-color: #00AEEF;
+		  color: #FFF;
+		  a {
+		  	color: #fff;
+		  }
+		  span{
+		  	color: #fff;
+		  }
+		}
+	}	
+}

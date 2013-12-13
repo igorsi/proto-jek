@@ -14,12 +14,15 @@
 /**
  * Import Normalize
  */
-@import "foundation/foundation";
+@import "foundation/normalize";
 
 /**
  * Import Foundation
  */
-@import "foundation/normalize";
+@import "foundation/foundation";
+@import "foundation/_variables";
+@import "foundation/_fonts";
+@import "foundation/_settings";
 
 /**
  * Import plugins
@@ -35,3 +38,4 @@ $base_url: '<%= site.baseurl %>';
  * Import custom css
  */
 @import "_custom/main";
+@import "_custom/mobile_menu";
