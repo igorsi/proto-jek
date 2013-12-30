@@ -1,2 +1,2 @@
-si_scy
+Prototype your site with Jekyll and Foundation
 ======
